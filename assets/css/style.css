@@ -59,12 +59,12 @@ a:hover {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   position: relative;
 }
 
@@ -352,12 +352,7 @@ a:hover {
 /* Testimonial Section */
 .testimonial {
   background-color: var(--light-bg);
-  padding: 5rem 0;
-}
-
-.testimonial {
-  background-color: var(--light-bg);
-  padding: 5rem 0;
+  padding: 3.5rem 0;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
@@ -390,11 +385,11 @@ a:hover {
 
 .testimonial-card {
   background-color: var(--white);
-  padding: 30px;
+  padding: 25px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   position: relative;
-  margin-top: 20px;
+  margin-top: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
