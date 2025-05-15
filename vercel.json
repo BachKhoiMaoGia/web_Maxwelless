@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/san-pham/([^/]+)", "dest": "/pages/san-pham/$1.html" },
+    { "src": "/lieu-trinh/([^/]+)", "dest": "/pages/lieu-trinh/$1.html" },
+    { "src": "/thu-vien-kien-thuc/([^/]+)", "dest": "/pages/thu-vien-kien-thuc/$1.html" },
+    { "src": "/gioi-thieu", "dest": "/pages/gioi-thieu.html" },
+    { "src": "/lien-he", "dest": "/pages/lien-he.html" },
+    { "src": "/tu-van", "dest": "/pages/tu-van.html" }
+  ],
+  "trailingSlash": false
+}
