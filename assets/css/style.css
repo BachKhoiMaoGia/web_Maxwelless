@@ -192,14 +192,24 @@ a:hover {
 
 /* Hero Section */
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/home/Lab.png');
   background-size: cover;
   background-position: center;
   color: var(--white);
   padding: 180px 0;
   position: relative;
   text-align: center;
-  animation: gradientMove 12s ease infinite;
+  animation: fadeBackground 20s ease infinite;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 1;
 }
 
 .hero-content {
@@ -207,7 +217,7 @@ a:hover {
   margin: 0 auto;
   animation: fadeInUp 1.5s ease;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .hero-title {
@@ -253,8 +263,14 @@ a:hover {
   width: 100%;
   height: 100%;
   background: linear-gradient(135deg, rgba(30, 95, 140, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
-  z-index: 1;
+  z-index: 2;
 }
+
+/* Hero Background Images */
+.hero-bg-1 { background-image: url('../images/banner hero/fitness-center-management-web-slider-1-2400x1200.jpg'); }
+.hero-bg-2 { background-image: url('../images/banner hero/fitness-center-management-web-slider-2-2400x1200.jpg'); }
+.hero-bg-3 { background-image: url('../images/banner hero/fitness-center-management-web-slider-3-2400x1200.jpg'); }
+.hero-bg-4 { background-image: url('../images/banner hero/fitness-center-management-web-slider-4-2400x1200.jpg'); }
 
 @keyframes fadeInUp {
   from {
@@ -267,15 +283,26 @@ a:hover {
   }
 }
 
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 0%;
+@keyframes fadeBackground {
+  0%, 20% {
+    background-image: url('../images/banner hero/fitness-center-management-web-slider-1-2400x1200.jpg');
+    background-position: center;
   }
-  50% {
-    background-position: 100% 0%;
+  25%, 45% {
+    background-image: url('../images/banner hero/fitness-center-management-web-slider-2-2400x1200.jpg');
+    background-position: center;
+  }
+  50%, 70% {
+    background-image: url('../images/banner hero/fitness-center-management-web-slider-3-2400x1200.jpg');
+    background-position: center;
+  }
+  75%, 95% {
+    background-image: url('../images/banner hero/fitness-center-management-web-slider-4-2400x1200.jpg');
+    background-position: center;
   }
   100% {
-    background-position: 0% 0%;
+    background-image: url('../images/banner hero/fitness-center-management-web-slider-1-2400x1200.jpg');
+    background-position: center;
   }
 }
 
@@ -592,6 +619,32 @@ a:hover {
 .about-image {
   border-radius: 15px;
   overflow: hidden;
+}
+
+/* Laboratory section */
+.lab-section {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+
+.lab-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.lab-image:hover {
+  transform: translateY(-10px);
+}
+
+.lab-image img {
+  transition: transform 0.5s ease;
+}
+
+.lab-image:hover img {
+  transform: scale(1.03);
 }
 
 .values-section {

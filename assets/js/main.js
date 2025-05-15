@@ -8,6 +8,32 @@ document.addEventListener('DOMContentLoaded', function() {
         offset: 100
     });
     
+    // Random Hero Banner
+    const heroBanner = document.getElementById('hero-banner');
+    if (heroBanner) {
+        const bannerImages = [
+            '/assets/images/banner hero/fitness-center-management-web-slider-1-2400x1200.jpg',
+            '/assets/images/banner hero/fitness-center-management-web-slider-2-2400x1200.jpg',
+            '/assets/images/banner hero/fitness-center-management-web-slider-3-2400x1200.jpg',
+            '/assets/images/banner hero/fitness-center-management-web-slider-4-2400x1200.jpg'
+        ];
+        
+        // Set initial random background
+        const randomIndex = Math.floor(Math.random() * bannerImages.length);
+        heroBanner.style.backgroundImage = `url('${bannerImages[randomIndex]}')`;
+        
+        // If we want to change the background periodically
+        let currentIndex = randomIndex;
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % bannerImages.length;
+            heroBanner.style.backgroundImage = 'none'; // Reset for smoother transition
+            setTimeout(() => {
+                heroBanner.style.backgroundImage = `url('${bannerImages[currentIndex]}')`;
+                heroBanner.style.transition = 'background-image 1s ease-in-out';
+            }, 100);
+        }, 5000); // Change every 5 seconds
+    }
+    
     // Navbar scroll behavior
     const header = document.querySelector('.header');
     if (header) {
