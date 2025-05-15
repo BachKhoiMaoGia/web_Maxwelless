@@ -30,7 +30,7 @@
     <div id="header-placeholder"></div>
 
     <!-- Hero Section -->
-    <section class="knowledge-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/vitamin-c-hero.jpg');">
+    <section class="knowledge-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/thu-vien-kien-thuc/VitaminC.png');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8" data-aos="fade-right">
@@ -107,7 +107,7 @@
                         </div>
                         
                         <figure class="figure my-5">
-                            <img src="/assets/images/vitamin-c-infusion.jpg" class="figure-img img-fluid rounded" alt="Truyền Vitamin C liều cao">
+                            <img src="/assets/images/thu-vien-kien-thuc/VitaminC.png" class="figure-img img-fluid rounded" alt="Truyền Vitamin C liều cao">
                             <figcaption class="figure-caption">Truyền Vitamin C liều cao tại Max Wellness được thực hiện dưới sự giám sát của chuyên gia y tế</figcaption>
                         </figure>
                         
@@ -274,21 +274,21 @@
                             <div class="card-body p-0">
                                 <div class="list-group list-group-flush">
                                     <a href="/pages/san-pham/glutathione.html" class="list-group-item list-group-item-action d-flex align-items-center">
-                                        <img src="/assets/images/glutathione-small.jpg" alt="Glutathione" class="me-3" width="60">
+                                        <img src="/assets/images/san-pham/Glutathione.png" alt="Glutathione" class="me-3" width="60">
                                         <div>
                                             <h5 class="mb-1">Glutathione</h5>
                                             <small>Chất chống oxy hóa mạnh mẽ</small>
                                         </div>
                                     </a>
                                     <a href="/pages/thu-vien-kien-thuc/nad-la-gi.html" class="list-group-item list-group-item-action d-flex align-items-center">
-                                        <img src="/assets/images/nad-small.jpg" alt="NAD+" class="me-3" width="60">
+                                        <img src="/assets/images/thu-vien-kien-thuc/NAD,NADH.png" alt="NAD+" class="me-3" width="60">
                                         <div>
                                             <h5 class="mb-1">NAD+ Là Gì?</h5>
                                             <small>Coenzyme thiết yếu cho sức khỏe tế bào</small>
                                         </div>
                                     </a>
                                     <a href="/pages/thu-vien-kien-thuc/exosome-te-bao-goc.html" class="list-group-item list-group-item-action d-flex align-items-center">
-                                        <img src="/assets/images/exosome-small.jpg" alt="Exosome" class="me-3" width="60">
+                                        <img src="/assets/images/thu-vien-kien-thuc/exosometebaogoc.png" alt="Exosome" class="me-3" width="60">
                                         <div>
                                             <h5 class="mb-1">Exosome & Tế Bào Gốc</h5>
                                             <small>Công nghệ tái tạo mô tiên tiến</small>
@@ -310,7 +310,7 @@
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 article-card">
-                        <img src="/assets/images/nad-article-thumb.jpg" class="card-img-top" alt="NAD+ Là Gì">
+                        <img src="/assets/images/thu-vien-kien-thuc/NAD,NADH.png" class="card-img-top" alt="NAD+ Là Gì">
                         <div class="card-body">
                             <h5 class="card-title">NAD+ Là Gì?</h5>
                             <p class="card-text">Tìm hiểu về vai trò của NAD+ trong quá trình lão hóa và năng lượng tế bào</p>
@@ -320,7 +320,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 article-card">
-                        <img src="/assets/images/exosome-article-thumb.jpg" class="card-img-top" alt="Exosome & Tế Bào Gốc">
+                        <img src="/assets/images/thu-vien-kien-thuc/exosometebaogoc.png" class="card-img-top" alt="Exosome & Tế Bào Gốc">
                         <div class="card-body">
                             <h5 class="card-title">Exosome & Tế Bào Gốc</h5>
                             <p class="card-text">Khám phá công nghệ tái tạo mô tiên tiến trong y học và làm đẹp</p>
@@ -330,7 +330,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mx-auto">
                     <div class="card h-100 article-card">
-                        <img src="/assets/images/immunity-article-thumb.jpg" class="card-img-top" alt="Tăng Cường Miễn Dịch">
+                        <img src="/assets/images/lieu-trinh/Tăng cường đề kháng.png" class="card-img-top" alt="Tăng Cường Miễn Dịch">
                         <div class="card-body">
                             <h5 class="card-title">5 Cách Tăng Cường Miễn Dịch Tự Nhiên</h5>
                             <p class="card-text">Những phương pháp khoa học giúp nâng cao sức đề kháng mùa dịch</p>
@@ -362,10 +362,10 @@
     <!-- Footer -->
     <div id="footer-placeholder"></div>
 
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- AOS Animation -->
+    <!-- AOS Animation JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <!-- Custom JS -->
@@ -385,6 +385,15 @@
             document.querySelector('.alert.alert-warning.mt-5 h4').parentNode.id = 'warnings';
             document.querySelector('h3.mt-5:nth-of-type(4)').id = 'protocols';
         });
+        
+        // Load components
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+        
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
     </script>
 </body>
 </html>
