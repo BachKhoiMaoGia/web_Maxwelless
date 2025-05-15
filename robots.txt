@@ -1,0 +1,9 @@
+# robots.txt cho Max Wellness Website
+User-agent: *
+Allow: /
+Disallow: /assets/fonts/
+Disallow: /assets/js/
+Disallow: /components/
+
+# Sitemap
+Sitemap: https://maxwellnessus.com/sitemap.xml

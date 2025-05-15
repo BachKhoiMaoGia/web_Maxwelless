@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tư Vấn - Max Wellness Việt Nam</title>
+    <meta name="description" content="Đặt lịch tư vấn miễn phí với các chuyên gia của Max Wellness về liệu trình NAD+, truyền IV, tế bào gốc và các liệu pháp chăm sóc sức khỏe chuyên sâu.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+    
+    <!-- Consultation Header -->
+    <section class="product-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" data-aos="fade-up">
+                    <h1>Tư Vấn Miễn Phí</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="/">Trang Chủ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Tư Vấn</li>
+                        </ol>
+                    </nav>
+                    <p class="lead mx-auto" style="max-width: 700px;">Bạn cần gì? Chúng tôi có giải pháp phù hợp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Consultation Form Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                            <h2>Tìm liệu trình phù hợp với bạn</h2>
+                            <p>Đội ngũ chuyên gia của Max Wellness sẽ liên hệ với bạn để tư vấn liệu trình phù hợp nhất với nhu cầu cá nhân của bạn.</p>
+                            
+                            <div class="mt-5">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="icon-box bg-primary text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <i class="fas fa-user-md"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1">Tư vấn chuyên sâu</h5>
+                                        <p class="mb-0">Tư vấn 1:1 với các chuyên gia y tế</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="icon-box bg-primary text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <i class="fas fa-clipboard-check"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1">Liệu trình cá nhân hóa</h5>
+                                        <p class="mb-0">Thiết kế riêng cho nhu cầu của bạn</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex align-items-center">
+                                    <div class="icon-box bg-primary text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1">Hỗ trợ sau liệu trình</h5>
+                                        <p class="mb-0">Theo dõi và điều chỉnh kết quả</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-5">
+                                <img src="/assets/images/consultation-image.jpg" alt="Tư vấn Max Wellness" class="img-fluid rounded-4">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6" data-aos="fade-left">
+                            <div class="card shadow-lg">
+                                <div class="card-body p-4 p-md-5">
+                                    <h3 class="card-title mb-4">Nhận tư vấn miễn phí</h3>
+                                    <form id="consultationForm">
+                                        <div class="mb-3">
+                                            <label for="fullName" class="form-label">Họ và tên</label>
+                                            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Nhập họ và tên của bạn" required>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="phone" class="form-label">Số điện thoại / Zalo</label>
+                                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Nhập số điện thoại hoặc Zalo" required>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email (không bắt buộc)</label>
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Nhập email của bạn">
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="goal" class="form-label">Mục tiêu của bạn</label>
+                                            <select class="form-select" id="goal" name="goal" required>
+                                                <option value="" selected disabled>Chọn mục tiêu chính</option>
+                                                <option value="rejuvenation">Trẻ hóa</option>
+                                                <option value="beauty">Làm đẹp</option>
+                                                <option value="immunity">Tăng đề kháng</option>
+                                                <option value="detox">Detox</option>
+                                                <option value="stem-cell">Tế bào gốc</option>
+                                                <option value="other">Khác</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="notes" class="form-label">Ghi chú thêm (không bắt buộc)</label>
+                                            <textarea class="form-control" id="notes" name="notes" rows="3" placeholder="Chia sẻ thêm về nhu cầu của bạn"></textarea>
+                                        </div>
+                                        
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="privacyPolicy" required>
+                                            <label class="form-check-label small" for="privacyPolicy">Tôi đồng ý với <a href="#">chính sách bảo mật</a> của Max Wellness</label>
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-primary btn-lg w-100">Gửi thông tin</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Tại sao chọn Max Wellness?</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-4">
+                                <i class="fas fa-certificate text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h4>Chất lượng Hoa Kỳ</h4>
+                            <p>Sản phẩm nhập khẩu và sản xuất tại Mỹ, đạt chứng nhận FDA và chuẩn cGMP, đảm bảo chất lượng và độ tinh khiết tối đa.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-4">
+                                <i class="fas fa-user-md text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h4>Đội ngũ chuyên môn cao</h4>
+                            <p>Các liệu trình được thực hiện bởi đội ngũ y tế được đào tạo chuyên sâu, có kinh nghiệm trong lĩnh vực y học chống lão hóa.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-4">
+                                <i class="fas fa-chart-line text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h4>Hiệu quả rõ rệt</h4>
+                            <p>Các liệu trình được thiết kế để mang lại kết quả nhanh chóng và bền vững, với phản hồi tích cực từ hàng nghìn khách hàng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Popular Treatments -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Liệu trình phổ biến</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="/assets/images/treatment-nad-thumb.jpg" class="img-fluid rounded-start h-100" alt="NAD+ IV" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">NAD+ IV</h4>
+                                    <p class="card-text">Trẻ hóa tế bào, cải thiện năng lượng, sửa chữa DNA và tăng cường chức năng não.</p>
+                                    <p><i class="fas fa-clock me-2 text-primary"></i> 45-90 phút/buổi</p>
+                                    <a href="/pages/lieu-trinh/nad-plus.html" class="btn btn-outline-primary">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="/assets/images/treatment-glutathione-thumb.jpg" class="img-fluid rounded-start h-100" alt="Trắng Da Glutathione" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">Trắng Da Glutathione</h4>
+                                    <p class="card-text">Sáng da tự nhiên, hỗ trợ giảm nám, làm đều màu da, bảo vệ gan và chống oxy hóa mạnh.</p>
+                                    <p><i class="fas fa-clock me-2 text-primary"></i> 30-45 phút/buổi</p>
+                                    <a href="/pages/lieu-trinh/trang-da-glutathione.html" class="btn btn-outline-primary">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="/assets/images/treatment-detox-thumb.jpg" class="img-fluid rounded-start h-100" alt="Detox Rượu" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">Detox Rượu</h4>
+                                    <p class="card-text">Giải độc gan, chống buồn nôn, làm tỉnh táo và giảm mệt mỏi sau uống rượu bia.</p>
+                                    <p><i class="fas fa-clock me-2 text-primary"></i> 45 phút/buổi</p>
+                                    <a href="/pages/lieu-trinh/detox-ruou-tao-nang-luong.html" class="btn btn-outline-primary">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="/assets/images/treatment-coq10-thumb.jpg" class="img-fluid rounded-start h-100" alt="CoQ10" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">CoQ10</h4>
+                                    <p class="card-text">Hỗ trợ sản xuất ATP tại ty thể, tăng sức bền tim mạch và năng lượng.</p>
+                                    <p><i class="fas fa-clock me-2 text-primary"></i> 30-45 phút/buổi</p>
+                                    <a href="/pages/san-pham/coenzyme-q10.html" class="btn btn-outline-primary">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonial Section -->
+    <div id="testimonials-placeholder"></div>
+    
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="/assets/js/main.js"></script>
+    
+    <script>
+        // Load components
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+        
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+            
+        fetch('/components/testimonials.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('testimonials-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
