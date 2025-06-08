@@ -880,3 +880,107 @@ a:hover {
 .fade-in-up {
   animation: fadeInUp 1s ease;
 }
+
+/* Expert Q&A Section Styles */
+.expert-qa-section {
+  position: relative;
+  background: linear-gradient(135deg, rgba(249, 252, 255, 0.97) 0%, rgba(229, 245, 255, 0.97) 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.expert-qa-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 180px;
+  background-image: url('/assets/images/logo/Logo.png');
+  background-size: cover;
+  opacity: 0.03;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.expert-profile {
+  position: relative;
+}
+
+.expert-profile .expert-image img {
+  border: 5px solid var(--white);
+  box-shadow: 0 5px 15px rgba(30, 95, 140, 0.15);
+  transition: all 0.3s ease;
+}
+
+.expert-profile .expert-image img:hover {
+  transform: scale(1.02);
+}
+
+.expert-title {
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.expert-name {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.expert-position {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+}
+
+.expert-description {
+  font-size: 0.95rem;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.expert-credentials .credential-item {
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.expert-qa .accordion-item {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.expert-qa .accordion-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+.expert-qa .accordion-button {
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: var(--white);
+  box-shadow: none;
+}
+
+.expert-qa .accordion-button:not(.collapsed) {
+  color: var(--primary-color);
+  background-color: rgba(114, 191, 232, 0.1);
+}
+
+.expert-qa .accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(30, 95, 140, 0.25);
+}
+
+.expert-qa .accordion-body {
+  background-color: var(--white);
+  padding: 1.5rem;
+}
+
+.expert-qa .expert-cta {
+  margin-top: 2rem;
+}
