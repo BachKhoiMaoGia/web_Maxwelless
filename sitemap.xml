@@ -78,4 +78,60 @@
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
+   <url>
+      <loc>https://maxwellnessus.com/san-pham/nac</loc>
+      <lastmod>2025-06-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://maxwellnessus.com/san-pham/biotin</loc>
+      <lastmod>2025-06-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://maxwellnessus.com/san-pham/l-lysine</loc>
+      <lastmod>2025-06-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://maxwellnessus.com/san-pham/vitamin-c</loc>
+      <lastmod>2025-06-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://maxwellnessus.com/lieu-trinh/ngan-ngua-dot-quy</loc>
+      <lastmod>2025-06-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://maxwellnessus.com/lieu-trinh/trang-da-cap-toc</loc>
+      <lastmod>2025-06-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+   <url>
+      <loc>https://maxwellnessus.com/thu-vien-kien-thuc/phong-ngua-dot-quy</loc>
+      <lastmod>2025-06-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://maxwellnessus.com/thu-vien-kien-thuc/tre-hoa-te-bao</loc>
+      <lastmod>2025-06-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   <url>
+      <loc>https://maxwellnessus.com/thu-vien-kien-thuc/tang-cuong-de-khang</loc>
+      <lastmod>2025-06-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
 </urlset>
