@@ -140,11 +140,48 @@ a:hover {
   align-items: center;
 }
 
+.navbar-brand {
+  position: relative;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: translateY(-3px);
+}
+
+.navbar-brand::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(30, 95, 140, 0.08) 0%, rgba(114, 191, 232, 0.12) 100%);
+  border-radius: 8px;
+  z-index: -1;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.navbar-brand:hover::before {
+  opacity: 1;
+  box-shadow: 0 5px 15px rgba(30, 95, 140, 0.2);
+}
+
 .navbar-brand img {
   max-height: 45px;
   padding: 0;
   object-fit: contain;
   background-color: transparent;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.05);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
 .nav-link {
