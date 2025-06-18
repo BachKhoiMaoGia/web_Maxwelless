@@ -1,0 +1,16 @@
+/* CSS để tối ưu favicon */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+  }
+}
+
+/* Lưu ý: Mặc dù chúng ta không thể tùy chỉnh trực tiếp cách favicon hiển thị trên tab trình duyệt,
+   nhưng chúng ta có thể khiến nó trở nên rõ ràng hơn bằng cách cải thiện chất lượng của favicon 
+   và đảm bảo nó hiển thị đúng trên mọi nền */

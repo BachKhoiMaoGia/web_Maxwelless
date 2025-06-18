@@ -1,0 +1,19 @@
+{
+  "name": "Max Wellness",
+  "short_name": "MaxWellness",
+  "icons": [
+    {
+      "src": "/assets/images/favicon/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#1E5F8C",
+  "background_color": "#F9FCFF",
+  "display": "standalone"
+}
