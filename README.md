@@ -4,7 +4,7 @@ Website chuyên nghiệp giới thiệu dịch vụ y tế cao cấp cho Max Wel
 
 ## Giới thiệu
 
-Max Wellness là đối tác y tế từ Mỹ chuyên cung cấp các liệu pháp chăm sóc sức khỏe chuyên sâu như NAD+, Glutathione, Coenzyme Q10 và các dòng truyền IV cao cấp. Website này được thiết kế để giới thiệu thương hiệu, sản phẩm và liệu trình đến khách hàng Việt Nam.
+Max Wellness là đối tác y tế từ Mỹ chuyên cung cấp các giải pháp chăm sóc sức khỏe chuyên sâu như NAD+, Glutathione, Coenzyme Q10 và các sản phẩm tái tạo cao cấp. Website này được thiết kế để giới thiệu thương hiệu, sản phẩm và combo sản phẩm tái tạo đến khách hàng Việt Nam.
 
 ## Cấu trúc thư mục
 
