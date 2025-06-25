@@ -7,7 +7,7 @@
 
 [[redirects]]
   from = "/lieu-trinh/*"
-  to = "/pages/lieu-trinh/:splat.html"
+  to = "/pages/combo-san-pham-tai-tao/:splat.html"
   status = 200
 
 [[redirects]]

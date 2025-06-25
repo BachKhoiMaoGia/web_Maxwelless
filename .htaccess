@@ -20,7 +20,7 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteRule ^san-pham/([a-zA-Z0-9-]+)$ /pages/san-pham/$1.html [L]
 
 # Xử lý các trang liệu trình
-RewriteRule ^lieu-trinh/([a-zA-Z0-9-]+)$ /pages/lieu-trinh/$1.html [L]
+RewriteRule ^lieu-trinh/([a-zA-Z0-9-]+)$ /pages/combo-san-pham-tai-tao/$1.html [L]
 
 # Xử lý các trang kiến thức
 RewriteRule ^thu-vien-kien-thuc/([a-zA-Z0-9-]+)$ /pages/thu-vien-kien-thuc/$1.html [L]
