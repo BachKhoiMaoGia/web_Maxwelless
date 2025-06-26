@@ -108,3 +108,8 @@ Max Wellness Việt Nam
 - ✉️ Email: founder@maxwellnessus.com
 - 🌐 Website: www.maxwellnessus.com
 Buil web demo dựa trên cấu trúc url cho khách xem qua
+
+## các việc cần làm vào sáng mai
+1. Page combo sản phẩm: xóa các nội dung liên quan đến thời gian liệu trình, các lưu ý khi tiêm truyền,...
+2. Chỉnh sửa 1 page hoàn chỉnh là ref để chỉnh các page con khác
+3. Chỉnh sửa lại phần USP của trang Giới thiệu
