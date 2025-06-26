@@ -80,7 +80,7 @@
                             </ul>
                         </div>
                         
-                        <h3 class="mt-5">Tác dụng của sản phẩm</h3>
+                        <h3 class="mt-5">Tác dụng của combo sản phẩm</h3>
                         <p>Combo sản phẩm tái tạo Detox rượu mang lại hiệu quả nhanh chóng cho người dùng:</p>
                         
                         <div class="row g-4 mb-4">
@@ -175,20 +175,35 @@
                 
                 <div class="col-lg-4">
                     <div class="sticky-top" style="top: 100px;">
-                        <div class="card shadow mb-4">
-                            <div class="card-body">
-                                <h3 class="card-title">Đặt lịch tư vấn</h3>
-                                <p class="card-text">Để được tư vấn cá nhân hóa về sản phẩm Detox rượu phù hợp với nhu cầu của bạn</p>
-                                <a href="/pages/tu-van.html" class="btn btn-primary w-100">Đặt lịch ngay</a>
-                            </div>
+                        <div class="contact-form">
+                            <h3 class="mb-4">Đặt lịch tư vấn</h3>
+                            <form id="treatmentContactForm">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Họ và tên" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Số điện thoại/Zalo" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="hidden" name="treatment" value="Detox rượu">
+                                    <select class="form-select" id="goal" name="goal" required>
+                                        <option value="" selected disabled>Mục tiêu của bạn</option>
+                                        <option value="detox">Giải độc gan</option>
+                                        <option value="energy">Phục hồi năng lượng</option>
+                                        <option value="hangover">Giảm triệu chứng sau rượu</option>
+                                        <option value="other">Khác</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Nhận tư vấn miễn phí</button>
+                            </form>
                         </div>
                         
-                        <div class="card shadow">
+                        <div class="card mt-4">
                             <div class="card-body">
-                                <h3 class="card-title">Kiến thức liên quan</h3>
-                                <ul class="list-unstyled">
-                                    <li class="mb-2"><a href="/pages/san-pham/glutathione.html"><i class="fas fa-arrow-right me-2"></i> Glutathione và khả năng giải độc</a></li>
-                                    <li class="mb-2"><a href="/pages/thu-vien-kien-thuc/vitamin-c-lieu-cao.html"><i class="fas fa-arrow-right me-2"></i> Vitamin C liều cao</a></li>
+                                <h4>Tìm hiểu thêm</h4>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><a href="/pages/san-pham/glutathione.html"><i class="fas fa-arrow-right me-2"></i> Glutathione</a></li>
+                                    <li class="mb-2"><a href="/pages/thu-vien-kien-thuc/giai-doc-gan.html"><i class="fas fa-arrow-right me-2"></i> Giải độc gan</a></li>
                                     <li><a href="/pages/combo-san-pham-tai-tao/tre-hoa-te-bao-voi-nadh.html"><i class="fas fa-arrow-right me-2"></i> Trẻ hóa tế bào với NADH</a></li>
                                 </ul>
                             </div>
@@ -199,72 +214,41 @@
         </div>
     </section>
     
-    <!-- Testimonials -->
-    <section class="py-5 bg-light">
+    <!-- Related Treatments -->
+    <section class="section bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Khách hàng nói gì về sản phẩm Detox rượu</h2>
+            <h2 class="section-title">Combo sản phẩm tương tự</h2>
             
             <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="testimonial-slider">
-                        <div class="testimonial-item p-4 bg-white rounded shadow">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="/assets/images/lieu-trinh/detox_testimonial_wellness_feeling_01.png" alt="Khách hàng" class="rounded-circle me-3" width="60">
-                                <div>
-                                    <h5 class="mb-0">Nguyễn Văn A</h5>
-                                    <p class="text-muted mb-0">Doanh nhân</p>
-                                </div>
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="rating text-warning mb-3">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p>"Tôi thường xuyên phải tham gia các buổi tiệc kinh doanh và uống rượu khá nhiều. Combo sản phẩm tái tạo Detox rượu của Max Wellness đã giúp tôi trở lại làm việc hiệu quả ngay sáng hôm sau, không còn cảm giác đau đầu và mệt mỏi như trước đây."</p>
-                            </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card treatment-card h-100">
+                        <img src="/assets/images/lieu-trinh/nad_plus_treatment_energy_flow.png" class="card-img-top card-img" alt="Trẻ hóa tế bào với NADH">
+                        <div class="card-body">
+                            <h4>Trẻ hóa tế bào với NADH</h4>
+                            <p class="card-text">Phục hồi năng lượng tế bào, tăng cường miễn dịch và làm chậm quá trình lão hóa từ gốc.</p>
+                            <a href="/pages/combo-san-pham-tai-tao/tre-hoa-te-bao-voi-nadh.html" class="btn btn-outline">Tìm hiểu thêm</a>
                         </div>
-                        
-                        <div class="testimonial-item p-4 bg-white rounded shadow mt-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="/assets/images/lieu-trinh/detox_testimonial_fresh_energy_02.png" alt="Khách hàng" class="rounded-circle me-3" width="60">
-                                <div>
-                                    <h5 class="mb-0">Trần Thị B</h5>
-                                    <p class="text-muted mb-0">Nhà thiết kế</p>
-                                </div>
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="rating text-warning mb-3">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p>"Ban đầu tôi dùng sản phẩm này để giải quyết tình trạng mệt mỏi sau khi uống rượu, nhưng sau đó tôi nhận ra nó còn rất hiệu quả cho những ngày làm việc căng thẳng kéo dài. Tôi cảm thấy tỉnh táo và tràn đầy năng lượng chỉ sau 1 tiếng bổ sung."</p>
-                            </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card treatment-card h-100">
+                        <img src="/assets/images/lieu-trinh/stroke_prevention_hero.png" class="card-img-top card-img" alt="Ngăn ngừa Đột quỵ">
+                        <div class="card-body">
+                            <h4>Ngăn ngừa Đột quỵ</h4>
+                            <p class="card-text">Hỗ trợ hệ thần kinh, tăng cường trí nhớ và giảm nguy cơ đột quỵ.</p>
+                            <a href="/pages/combo-san-pham-tai-tao/ngan-ngua-dot-quy.html" class="btn btn-outline">Tìm hiểu thêm</a>
                         </div>
-                        
-                        <div class="testimonial-item p-4 bg-white rounded shadow mt-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <img src="/assets/images/lieu-trinh/detox_testimonial_clear_mind_03.png" alt="Khách hàng" class="rounded-circle me-3" width="60">
-                                <div>
-                                    <h5 class="mb-0">Lê Văn C</h5>
-                                    <p class="text-muted mb-0">Kỹ sư IT</p>
-                                </div>
-                            </div>
-                            <div class="testimonial-content">
-                                <div class="rating text-warning mb-3">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <p>"Làm việc trong ngành IT với những đêm thức trắng đã khiến tôi kiệt sức. Combo sản phẩm tái tạo Detox của Max Wellness giúp cơ thể tôi phục hồi nhanh chóng. Đặc biệt, tôi cảm thấy gan của mình hoạt động tốt hơn sau mỗi lần bổ sung."</p>
-                            </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card treatment-card h-100">
+                        <img src="/assets/images/san-pham/glutathione_thumbnail.png" class="card-img-top card-img" alt="Trắng Da Cấp Tốc">
+                        <div class="card-body">
+                            <h4>Trắng Da Cấp Tốc</h4>
+                            <p class="card-text">Sáng da tự nhiên, hỗ trợ giảm nám, làm đều màu da, bảo vệ gan.</p>
+                            <a href="/pages/combo-san-pham-tai-tao/trang-da-cap-toc.html" class="btn btn-outline">Tìm hiểu thêm</a>
                         </div>
                     </div>
                 </div>
@@ -272,54 +256,7 @@
         </div>
     </section>
     
-    <!-- Related Products -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Sản phẩm liên quan</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 product-card">
-                        <img src="/assets/images/san-pham/glutathione_thumbnail.png" class="card-img-top card-img" alt="Glutathione">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Glutathione</h5>
-                            <p class="card-text">Chất chống oxy hóa mạnh mẽ, hỗ trợ giải độc và bảo vệ gan</p>
-                            <a href="/pages/san-pham/glutathione.html" class="btn btn-outline">Tìm hiểu thêm</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 product-card">
-                        <img src="/assets/images/lieu-trinh/nad_plus_thumbnail.png" class="card-img-top card-img" alt="NAD+ Phục hồi tế bào">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">NAD+ Phục hồi tế bào</h5>
-                            <p class="card-text">Phục hồi năng lượng tế bào và chống lão hóa từ bên trong</p>
-                            <a href="/pages/combo-san-pham-tai-tao/tre-hoa-te-bao-voi-nadh.html" class="btn btn-outline">Tìm hiểu thêm</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 product-card">
-                        <img src="/assets/images/lieu-trinh/glutathione_treatment_facial_radiance.png" class="card-img-top card-img" alt="Trắng Da Cấp Tốc">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Trắng Da Cấp Tốc</h5>
-                            <p class="card-text">Combo sản phẩm tái tạo làm sáng da từ bên trong với Glutathione và Vitamin C</p>
-                            <a href="/pages/combo-san-pham-tai-tao/trang-da-cap-toc.html" class="btn btn-outline">Tìm hiểu thêm</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 product-card">
-                        <img src="/assets/images/san-pham/coq10_thumbnail.png" class="card-img-top card-img" alt="CoQ10">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Coenzyme Q10</h5>
-                            <p class="card-text">Bảo vệ tim mạch và tăng cường năng lượng tế bào</p>
-                            <a href="/pages/san-pham/coenzyme-q10.html" class="btn btn-outline">Tìm hiểu thêm</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     
     <!-- Contact CTA Section -->
     <section class="py-5 bg-light">
