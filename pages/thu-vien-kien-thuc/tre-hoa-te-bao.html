@@ -26,7 +26,7 @@
 
     <div id="header-placeholder"></div>
 
-    <!-- Knowledge Header -->
+     <!-- Knowledge Header -->
     <section class="knowledge-header">
         <div class="container">
             <div class="row align-items-center">
@@ -232,8 +232,25 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/assets/js/main.js"></script>
     <script>
-        fetch('/components/header.html').then(response => response.text()).then(data => document.getElementById('header-placeholder').innerHTML = data);
-        fetch('/components/footer.html').then(response => response.text()).then(data => document.getElementById('footer-placeholder').innerHTML = data);
+        // Load components
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+        
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+            
+        // Add smooth scrolling for the table of contents
+        document.querySelectorAll('.table-of-contents a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
 </body>
 

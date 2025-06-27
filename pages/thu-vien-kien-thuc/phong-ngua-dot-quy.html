@@ -90,21 +90,18 @@
                     </div>
 
                     <div class="mb-5" data-aos="fade-up" id="nhan-biet-dot-quy">
-                        <div class="alert alert-warning">
-                            <h4><i class="fas fa-exclamation-triangle me-2"></i> Dấu hiệu nhận biết sớm đột quỵ
-                                (F.A.S.T)</h4>
-                            <p>Hãy hành động ngay lập tức nếu bạn thấy ai đó có các dấu hiệu sau:</p>
-                            <ul>
-                                <li><strong>F (Face Drooping):</strong> Mặt bị xệ, méo một bên, nụ cười không cân đối.
-                                </li>
-                                <li><strong>A (Arm Weakness):</strong> Yếu hoặc tê một cánh tay. Yêu cầu người đó giơ cả
-                                    hai tay lên, một tay có bị rơi xuống không?</li>
-                                <li><strong>S (Speech Difficulty):</strong> Nói khó, nói ngọng, không nói được hoặc nói
-                                    những câu vô nghĩa.</li>
-                                <li><strong>T (Time to call emergency):</strong> Thời gian là vàng. Gọi cấp cứu ngay lập
-                                    tức.</li>
-                            </ul>
-                        </div>
+                        <h3>Dấu hiệu nhận biết sớm đột quỵ (F.A.S.T)</h3>
+                        <p>Hãy hành động ngay lập tức nếu bạn thấy ai đó có các dấu hiệu sau:</p>
+                        <ul>
+                            <li><strong>F (Face Drooping):</strong> Mặt bị xệ, méo một bên, nụ cười không cân đối.
+                            </li>
+                            <li><strong>A (Arm Weakness):</strong> Yếu hoặc tê một cánh tay. Yêu cầu người đó giơ cả
+                                hai tay lên, một tay có bị rơi xuống không?</li>
+                            <li><strong>S (Speech Difficulty):</strong> Nói khó, nói ngọng, không nói được hoặc nói
+                                những câu vô nghĩa.</li>
+                            <li><strong>T (Time to call emergency):</strong> Thời gian là vàng. Gọi cấp cứu ngay lập
+                                tức.</li>
+                        </ul>
                     </div>
                         
                     <div class="mb-5" data-aos="fade-up" id="giai-phap-y-hoc">
@@ -193,35 +190,6 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4">
-                    <aside class="sticky-top" style="top: 100px;">
-                        <div class="card shadow mb-4">
-                            <div class="card-body">
-                                <h3 class="card-title">Combo sản phẩm tái tạo Chuyên sâu</h3>                                <p class="card-text">Tìm hiểu về sản phẩm cao cấp giúp hỗ trợ hệ thần kinh và ngăn
-                                    ngừa đột quỵ tại Max Wellness.</p>
-                                <a href="/pages/combo-san-pham-tai-tao/ngan-ngua-dot-quy.html" class="btn btn-primary w-100">Xem chi
-                                    tiết sản phẩm</a>
-                            </div>
-                        </div>
-
-                        <div class="card shadow">
-                            <div class="card-header">
-                                <h3 class="card-title mb-0">Bài viết liên quan</h3>
-                            </div>
-                            <div class="card-body p-0">
-                                <div class="list-group list-group-flush">
-                                    <a href="/pages/thu-vien-kien-thuc/tre-hoa-te-bao.html"
-                                        class="list-group-item list-group-item-action">Liệu pháp Trẻ hóa Tế bào</a>
-                                    <a href="/pages/thu-vien-kien-thuc/tang-cuong-de-khang.html"
-                                        class="list-group-item list-group-item-action">Tăng cường Hệ miễn dịch</a>
-                                    <a href="/pages/san-pham/nac.html"
-                                        class="list-group-item list-group-item-action">Tìm hiểu về NAC</a>
-                                </div>
-                            </div>
-                        </div>
-                    </aside>
-                </div>
             </div>
         </div>
     </section>
@@ -274,8 +242,26 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/assets/js/main.js"></script>
     <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out'
+        });
+        
+        // Load components
         fetch('/components/header.html').then(response => response.text()).then(data => document.getElementById('header-placeholder').innerHTML = data);
         fetch('/components/footer.html').then(response => response.text()).then(data => document.getElementById('footer-placeholder').innerHTML = data);
+        
+        // Add smooth scrolling for the table of contents
+        document.querySelectorAll('.table-of-contents a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
 </body>
 

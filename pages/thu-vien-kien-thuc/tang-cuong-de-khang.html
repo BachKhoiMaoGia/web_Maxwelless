@@ -266,6 +266,17 @@
     <script>
         fetch('/components/header.html').then(response => response.text()).then(data => document.getElementById('header-placeholder').innerHTML = data);
         fetch('/components/footer.html').then(response => response.text()).then(data => document.getElementById('footer-placeholder').innerHTML = data);
+        
+        // Add smooth scrolling for the table of contents
+        document.querySelectorAll('.table-of-contents a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
 </body>
 
