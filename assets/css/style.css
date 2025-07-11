@@ -3,6 +3,23 @@
 * Created: May 2025
 */
 
+/* Text alignment utilities */
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
 /* Global Styles */
 :root {
   --primary-color: #1E5F8C;      /* Xanh dương đậm - chuyên nghiệp, y tế */
