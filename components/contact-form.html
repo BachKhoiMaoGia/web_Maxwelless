@@ -1,26 +1,44 @@
 <!-- Contact Form Component -->
 <div class="contact-form">
-    <h3 class="mb-4">Nhận tư vấn miễn phí</h3>
+    <h3 class="mb-4">Đăng Ký Hợp Tác OEM/ODM</h3>
     <form id="contactForm">
         <div class="mb-3">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Họ và tên" required>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Họ và tên đại diện" required>
         </div>
         <div class="mb-3">
-            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Số điện thoại/Zalo" required>
+            <input type="text" class="form-control" id="company" name="company" placeholder="Tên công ty/Nhà thuốc" required>
         </div>
         <div class="mb-3">
-            <select class="form-select" id="goal" name="goal" required>
-                <option value="" selected disabled>Mục tiêu quan tâm</option>
-                <option value="detox">Detox</option>
-                <option value="lam-dep">Làm đẹp</option>
-                <option value="nang-luong">Tăng năng lượng</option>
-                <option value="ho-tro-gan">Hỗ trợ gan</option>
-                <option value="te-bao-phuc-hoi">Tế bào phục hồi</option>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Số điện thoại liên hệ" required>
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email công ty" required>
+        </div>
+        <div class="mb-3">
+            <select class="form-select" id="partnership_type" name="partnership_type" required>
+                <option value="" selected disabled>Loại hình hợp tác</option>
+                <option value="oem">Sản xuất OEM (theo yêu cầu)</option>
+                <option value="odm">Phát triển ODM (công thức mới)</option>
+                <option value="distribution">Phân phối độc quyền</option>
+                <option value="research">Hợp tác nghiên cứu</option>
+                <option value="pharmacy">Nhà thuốc - đại lý</option>
+                <option value="private_label">Private Label</option>
             </select>
         </div>
         <div class="mb-3">
-            <textarea class="form-control" id="note" name="note" rows="3" placeholder="Ghi chú (nếu có)"></textarea>
+            <select class="form-select" id="product_category" name="product_category" required>
+                <option value="" selected disabled>Danh mục sản phẩm quan tâm</option>
+                <option value="supplements">Thực phẩm chức năng</option>
+                <option value="medical_devices">Thiết bị y tế</option>
+                <option value="cosmetics">Mỹ phẩm chức năng</option>
+                <option value="nutraceuticals">Dược phẩm thiên nhiên</option>
+                <option value="dermal_patches">Dán da (Transdermal)</option>
+                <option value="liquid_formulations">Dạng nước/Xịt</option>
+            </select>
         </div>
-        <button type="submit" class="btn btn-primary w-100">Gửi tư vấn</button>
+        <div class="mb-3">
+            <textarea class="form-control" id="requirements" name="requirements" rows="3" placeholder="Mô tả chi tiết yêu cầu và số lượng dự kiến"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Đăng ký hợp tác ngay</button>
     </form>
 </div>
